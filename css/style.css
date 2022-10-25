@@ -12,11 +12,8 @@ a {
   border: solid 2px gray;
   border-radius: 7px;
   padding: 5px 5px;
-  color: rgb(81, 81, 81);
+  color: black !important;
   font-weight: 700;
-}
-a:hover {
-  background-color: rgba(128, 128, 128, 0.462);
 }
 
 h1,
@@ -25,6 +22,10 @@ h2 {
   font-size: bold;
   font-weight: 700;
   color: rgb(81, 81, 81);
+}
+
+li {
+  list-style: none;
 }
 
 ul li {
@@ -39,6 +40,11 @@ ul li {
 
 header {
   background-image: linear-gradient(rgb(214, 234, 248), rgb(123, 123, 188));
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .logo {
@@ -247,9 +253,9 @@ footer {
     transition: all;
   }
   a:hover {
-    transform: scale(2, 2);
+    transform: scale(1, 1);
     transition: all 1.8s;
-    animation-duration: 1s;
+    animation-duration: 0.3s;
     animation-name: aparecer;
   }
 
