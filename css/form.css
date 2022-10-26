@@ -1,0 +1,133 @@
+.formulario {
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  padding: 20px;
+  border: 1px solid rgba(84, 84, 84, 0.492);
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.campo textarea {
+  height: 16rem;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.boton-contacto {
+  color: black;
+  text-decoration: none;
+  border: solid 1px;
+  border-radius: 7px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.boton-contacto:hover {
+  background-color: rgba(128, 128, 128, 0.462);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .gridForm {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "principal"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px auto 100px;
+  }
+  header {
+    grid-area: header;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    grid-area: principal;
+    margin: 5px auto;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    align-items: center;
+  }
+
+  .tituloLogo {
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    background-color: rgba(62, 62, 132, 0.714);
+  }
+}
+
+/*desktop*/
+@media only screen and (min-width: 768px) {
+  .gridForm {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "principal"
+      "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 100px;
+  }
+  header {
+    grid-area: header;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  main {
+    grid-area: principal;
+  }
+  footer {
+    grid-area: footer;
+  }
+}

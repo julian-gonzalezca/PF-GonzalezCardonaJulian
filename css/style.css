@@ -94,6 +94,10 @@ header {
   align-items: center;
   margin-bottom: 1rem;
 }
+
+.bg-button {
+  background-color: rgba(62, 62, 132, 0.237);
+}
 /*SECTION*/
 
 .seccion {
@@ -130,10 +134,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .icon {
   border: none;
+  background-color: rgba(236, 234, 234, 0);
 }
+
 /*mobile*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .gridContainer {
@@ -145,7 +152,7 @@ footer {
       "anuncios"
       "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 300px auto auto auto 200px;
+    grid-template-rows: 250px auto auto auto 100px;
   }
   header {
     grid-area: header;
@@ -156,15 +163,15 @@ footer {
   }
   main {
     grid-area: principal;
-    margin: 10px 10px;
+    margin: 5px auto;
   }
   section {
     grid-area: secundario;
-    margin: 0 10px 10px 10px;
+    margin: 5px auto;
   }
   aside {
     grid-area: anuncios;
-    margin: 0 10px 10px 10px;
+    margin: 5px auto;
   }
   footer {
     grid-area: footer;
@@ -175,6 +182,7 @@ footer {
     margin: 10px auto;
     align-items: center;
   }
+
   .tituloLogo {
     margin: 0 auto;
   }
@@ -197,7 +205,7 @@ footer {
     height: 200px;
   }
   a {
-    background-color: rgba(62, 62, 132, 0.401);
+    background-color: rgba(62, 62, 132, 0.714);
   }
 }
 /*desktop*/
@@ -255,6 +263,7 @@ footer {
     text-transform: uppercase;
     transition: all;
   }
+
   a:hover {
     transition: all 1.8s;
     animation-duration: 0.3s;
