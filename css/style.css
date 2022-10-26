@@ -145,7 +145,7 @@ footer {
       "anuncios"
       "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 60% 20% 20% 200px;
+    grid-template-rows: 300px auto auto auto 200px;
   }
   header {
     grid-area: header;
@@ -196,10 +196,13 @@ footer {
     width: 300px;
     height: 200px;
   }
+  a {
+    background-color: rgba(62, 62, 132, 0.401);
+  }
 }
 /*desktop*/
 @media only screen and (min-width: 768px) {
-  #gridContainer {
+  .gridContainer {
     display: grid;
     grid-template-areas:
       "header header"
@@ -253,7 +256,6 @@ footer {
     transition: all;
   }
   a:hover {
-    transform: scale(1, 1);
     transition: all 1.8s;
     animation-duration: 0.3s;
     animation-name: aparecer;
