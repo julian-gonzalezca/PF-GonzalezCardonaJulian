@@ -101,10 +101,13 @@ header {
 /*SECTION*/
 
 .seccion {
-  padding: 20px;
   display: flex;
+  height: 50vh;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
+  justify-content: center;
+  text-align: justify;
+  gap: 1rem;
 }
 
 /*ASIDE*/
