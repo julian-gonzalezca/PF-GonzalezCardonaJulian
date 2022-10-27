@@ -100,6 +100,16 @@
   a {
     background-color: rgba(62, 62, 132, 0.714);
   }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 
 /*desktop*/
@@ -129,5 +139,19 @@
   }
   footer {
     grid-area: footer;
+  }
+
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    gap: 1rem;
+  }
+  .servicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: justify;
   }
 }
