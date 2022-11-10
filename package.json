@@ -1,5 +1,28 @@
 {
   "dependencies": {
     "animate.css": "^4.1.1"
-  }
+  },
+  "name": "proyecto_desarrollo_web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss scss/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julian-gonzalezca/coderhouse.git"
+  },
+  "author": "Julian Gonzalez Cardona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julian-gonzalezca/coderhouse/issues"
+  },
+  "homepage": "https://github.com/julian-gonzalezca/coderhouse#readme",
+  "description": ""
 }
